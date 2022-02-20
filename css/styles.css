@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Akaya Telivigala';
+    src: url('../fonts/AkayaTelivigala-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, p, span, a, li{
+    font-family: 'Akaya Telivigala', cursive;
+}
+h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+header{
+    position: relative;
+}
+.navbar{
+    background-color: #5d0068!important;
+    position: fixed;
+    width: 100vw;
+    height: 72px;
+    z-index: 5;
+}
+.nav-link{
+    position: relative;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.nav-link:hover:after {
+    background: #fff;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.home{
+    background-color: #5d0068;
+    min-height: 100vh;
+}
+.home-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.box{
+    height: 80px;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.box:hover{
+    background-color: #9a00ac;
+}
+.about{
+    background-color: #2B192E;
+    min-height: 100vh;
+}
+.stats{
+    background-color: black;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.roadmap{
+    background-color: #5d0068;
+}
+.sidebar{
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top: 10vh;
+}
+#faq{
+    background-color: #2B192E;
+    min-height: 100vh;
+}
+.faq-text{
+    background-color: transparent;
+}
+.faq-question{
+    outline: none;
+    width: 100%;
+    font-size: 22px;
+}
+.faq-question:hover{
+    color:white;
+}
+.faq-container{
+    border-bottom: rgba(245, 245, 245, 0.445) solid 1px;
+}
+#team{
+    background-color: #5d0068;
+}
+.card{
+    background-color: #2B192E;
+}
+.team-card{
+    background-color: #2B192E;
+    padding: 0;
+    border-radius: 20px;
+    border: #5e006875 solid 1px;
+
+}
+.team-card img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+footer{
+    background-color: #463249;
+    
+}
