@@ -16,11 +16,11 @@ header{
     position: relative;
 }
 .navbar{
-    background-color: transparent!important;
     position: fixed;
     width: 100vw;
     z-index: 5;
-    padding: 0!important;
+    padding: 0;
+    transition: 0.2s;
 }
 .nav-link{
     position: relative;
@@ -94,10 +94,12 @@ header{
     background-color: #5d0068;
 }
 .sidebar{
+    display: none;
     background-color: black;
     position: fixed;
-    right: 0;
+    right: -40px;
     top: 10vh;
+    transition: 0.2s;
 }
 #faq{
     background-color: #5d0068;
