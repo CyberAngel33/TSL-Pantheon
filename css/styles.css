@@ -16,11 +16,11 @@ header{
     position: relative;
 }
 .navbar{
-    background-color: #5d0068!important;
+    background-color: transparent!important;
     position: fixed;
     width: 100vw;
-    height: 72px;
     z-index: 5;
+    padding: 0!important;
 }
 .nav-link{
     position: relative;
@@ -44,13 +44,20 @@ header{
     transform-origin: 0 0;
 }
 .home{
-    background-color: #5d0068;
-    min-height: 100vh;
+    /* margin-top: 72px; */
+    background-image: url("../img/home-background.png");
+    background-size: cover;
+    background-position: top-right;
+    background-repeat: no-repeat;
+    padding-bottom: 290px;
 }
 .home-image{
     height: 100%;
     width: 100%;
     border-radius: 50px;
+}
+.transition{
+    height: 250px;
 }
 .box{
     height: 80px;
@@ -93,7 +100,7 @@ header{
     top: 10vh;
 }
 #faq{
-    background-color: #2B192E;
+    background-color: #5d0068;
     min-height: 100vh;
 }
 .faq-text{
@@ -111,23 +118,46 @@ header{
     border-bottom: rgba(245, 245, 245, 0.445) solid 1px;
 }
 #team{
-    background-color: #5d0068;
+    background-color: #2B192E;
 }
 .card{
-    background-color: #2B192E;
+    background-color: #5d0068;
 }
 .team-card{
-    background-color: #2B192E;
+    background-color: #9a00ac;
     padding: 0;
     border-radius: 20px;
     border: #5e006875 solid 1px;
-
+    font-size: 20px;
+    border-top: 1px solid #5d0068;
 }
 .team-card img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+.card-sec-text{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.roadmap-title{
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.roadmap-description{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+}
+
 footer{
     background-color: #463249;
     
 }
+
+@media screen and (max-width: 1000px) {
+    .navbar-nav {
+      display: none;
+    }
+  }
