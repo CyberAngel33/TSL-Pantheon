@@ -18,7 +18,7 @@ description: Our team information, details, and more.
 
 ## **Media & Content Creation**
 
-&#x20;    ****     All our content creation, media, and marketing are handled by DATI & Wrenchie. The Media & Content Creation team has experience working with both local & international companies handling all types of needs that range from social media to real products and productions. We decided to go the additional step and make sure all of our content was carried by professionals.
+&#x20;    ****     All our content creation, media, and marketing are handled by Ouroboros & Wrenchie. The Media & Content Creation team has experience working with both local & international companies handling all types of needs that range from social media to real products and productions. We decided to go the additional step and make sure all of our content was carried by professionals.
 
 
 
