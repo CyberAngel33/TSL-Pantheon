@@ -5,6 +5,18 @@
     font-style: normal;
 }
 
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 h1, h2, h3, h4, p, span, a, li{
     font-family: 'Akaya Telivigala', cursive;
 }
@@ -66,8 +78,68 @@ header{
     font-size: 20px;
     transition: 0.2s;
 }
-.box:hover{
-    background-color: #9a00ac;
+.discord:hover{
+    background-color: #5865F2;
+}
+.twitter:hover{
+    background-color: #00cbff;
+}
+.instagram:hover{
+    background-color: #bc2a8d;
+}
+.telegram:hover{
+    background-color: #229ED9;
+}
+.reddit:hover{
+    background-color: #ff4500;
+}
+.opensea:hover{
+    background-color: #2081e2;
+}
+.glow-on-hover {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.glow-on-hover::before {
+    content: "";
+    background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    -webkit-animation: glowing 20s linear infinite;
+    -moz-animation: glowing 20s linear infinite;
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.glow-on-hover:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.glow-on-hover:hover:after {
+    background: transparent;
+}
+.glow-on-hover:hover:before {
+    opacity: 1;
 }
 .about{
     background-color: #2B192E;
@@ -111,7 +183,7 @@ header{
 .faq-question{
     outline: none;
     width: 100%;
-    font-size: 22px;
+    font-size: 26px;
 }
 .faq-question:hover{
     color:white;
@@ -151,6 +223,18 @@ header{
 .roadmap-description{
     color: rgba(255, 255, 255, 0.75);
     font-size: 20px;
+}
+
+.modal-dialog{
+    margin: calc(50vh - 150px) auto;
+}
+.bluredbackground{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 footer{
