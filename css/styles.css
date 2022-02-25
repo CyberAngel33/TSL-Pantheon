@@ -213,7 +213,14 @@ header{
     font-size: 16px;
     color: rgba(255, 255, 255, 0.75);
 }
-
+.roadmap-box{
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 270px;
+}
+.roadmap-box li{
+    color:white;
+}
 .roadmap-title{
     font-size: 42px;
     font-weight: bold;
@@ -228,6 +235,18 @@ header{
 .modal-dialog{
     margin: calc(50vh - 150px) auto;
 }
+.modal-content{
+    position: relative;
+}
+/* .modal-content::after{
+    content: "";
+    background-color: white;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+} */
 .bluredbackground{
     background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
@@ -236,10 +255,31 @@ header{
     top: 0;
     left: 0;
 }
+.form-control{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.input-form{
+    width: 100%;
+    border-radius: 0.25rem;
+}
+.input-form:focus-within{
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
 
 footer{
     background-color: #463249;
-    
 }
 
 @media screen and (max-width: 1000px) {
