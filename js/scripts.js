@@ -34,7 +34,6 @@ function modalClose(){
 
 }
 function comingsoon(obj){
-<<<<<<< Updated upstream
     obj.setAttribute("data-text", obj.children[0].innerHTML)
     obj.children[0].innerHTML = "Coming Soon!";
     
@@ -45,12 +44,5 @@ function back(obj){
 
 function popupAnimation(){
     let modal = document.querySelector(".modal-body");
-    modal.style.zIndex=3;
-=======
-    
-    obj.children[0].innerHTML = "Coming Soon!";
-}
-function back(){
-
->>>>>>> Stashed changes
+    modal.style.zIndex=3; 
 }
