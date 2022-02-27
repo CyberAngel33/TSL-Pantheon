@@ -41,8 +41,3 @@ function comingsoon(obj){
 function back(obj){
     obj.children[0].innerHTML = obj.getAttribute("data-text")
 }
-
-function popupAnimation(){
-    let modal = document.querySelector(".modal-body");
-    modal.style.zIndex=3; 
-}
