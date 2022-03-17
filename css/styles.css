@@ -216,7 +216,7 @@ header{
 .roadmap-box{
     border: 1px solid white;
     border-radius: 20px;
-    height: 270px;
+    height: 100%;
 }
 .roadmap-box li{
     color:white;
@@ -315,4 +315,13 @@ footer{
     .navbar-nav {
       display: none;
     }
+    .whitepaper {
+      display: block;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .whitepaper {
+        display: none;
+      }
   }
+}
