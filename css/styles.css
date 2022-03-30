@@ -27,6 +27,9 @@ h1{
 header{
     position: relative;
 }
+.logo{
+    height: 45px;
+}
 .navbar{
     position: fixed;
     width: 100vw;
