@@ -264,11 +264,14 @@ header{
     border: 1px solid #5d0068;
 }
 .modal-header{
-    border: none;
     padding-bottom: 6px;
 }
-.modal-header h5{
+.modal-title{
     font-size: 26px;
+    color: white;
+}
+.modal-subtitle{
+    font-size: 18px;
 }
 /* .modal-content::after{
     content: "";
@@ -325,6 +328,5 @@ footer{
 @media screen and (min-width: 1000px) {
     .whitepaper {
         display: none;
-      }
-  }
+    }
 }
