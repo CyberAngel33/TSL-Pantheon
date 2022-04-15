@@ -235,12 +235,14 @@ header{
     font-size: 20px;
 }
 .modal-dialog{
-    box-shadow: 0 0 10px #a100b3;
     margin: calc(50vh - 150px) auto;
 }
 .modal-content{
+    box-shadow: 0 0 10px #a100b3;
     background-color: #9a00ac;
     position: relative;
+    border: none;
+    border-radius: none;
 }
 .modal-content label, input, h5{
     color:white;
@@ -313,7 +315,6 @@ header{
 .input-form:focus-within{
     box-shadow: 0 0 0 0.25rem #5e00687a;
 }
-
 footer{
     background-color: #463249;
 }
