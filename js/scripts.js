@@ -41,3 +41,7 @@ function comingsoon(obj){
 function back(obj){
     obj.children[0].innerHTML = obj.getAttribute("data-text")
 }
+
+function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }

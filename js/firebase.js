@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-firestore.js";
+import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app-check.js"
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 const firebaseConfig = {
@@ -17,6 +18,10 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const firestore = getFirestore();
 
+const appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider('6LesNXwfAAAAAOwU40_N-M8QI3Y_o9ook_R6JHJf'),
+    isTokenAutoRefreshEnabled: true
+  });
 
 const submitButton = document.querySelector("#EmailSubmit");
 submitButton.addEventListener("click", function(){
@@ -31,9 +36,3 @@ submitButton.addEventListener("click", function(){
         modalClose();
     });
 });
-// function getMarker() {
-//     const snapshot = await firebase.firestore().collection('events').get()
-//     return snapshot.docs.map(doc => doc.data());
-// }
-// let sm = getMarker();
-// console.log(sm);

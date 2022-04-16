@@ -97,7 +97,10 @@
                                 <label for="recipient-email" class="col-form-label">Email</label>
                                 <div class="input-form d-flex flex-row ms-3">
                                     <input type="email" class="form-control" id="recipient-email">
-                                    <button type="submit" class="btn btn-primary" id="EmailSubmit">Join!</button>
+                                    <button type="submit" class="g-recaptcha btn btn-primary" id="EmailSubmit"
+                                    data-sitekey="6LesNXwfAAAAAOwU40_N-M8QI3Y_o9ook_R6JHJf" 
+                                    data-callback='onSubmit' 
+                                    data-action='submit'>Join!</button>
                                 </div>
                             </div>
                         </form>
@@ -498,6 +501,7 @@
             &copy; Powered By TSL Corp
         </p>
     </footer>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://kit.fontawesome.com/c42cee91f2.js" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="module" src="js/firebase.js"></script>
