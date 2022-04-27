@@ -23,6 +23,8 @@ const appCheck = initializeAppCheck(app, {
     isTokenAutoRefreshEnabled: true
   });
 
+// let metaResp = MetaMaskConnection().result]["WalletAdress"];
+
 const submitButton = document.querySelector("#EmailSubmit");
 submitButton.addEventListener("click", function(){
     let EmailValue = document.querySelector("#recipient-email").value;

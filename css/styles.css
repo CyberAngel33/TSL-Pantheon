@@ -28,6 +28,7 @@ header{
     position: relative;
 }
 .logo{
+    padding: 0 10px;
     height: 45px;
 }
 .navbar{
@@ -59,7 +60,6 @@ header{
     transform-origin: 0 0;
 }
 .home{
-    /* margin-top: 72px; */
     background-image: url("../img/home-background.png");
     background-size: cover;
     background-position: top-right;
@@ -103,8 +103,8 @@ header{
     width: 100%;
     border: none;
     outline: none;
-    color: #fff;
-    background: #111;
+    color: #ffffff;
+    background: #111111;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -151,18 +151,15 @@ header{
 .stats{
     background-color: black;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.2s;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 30px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: flex-start;
     margin-bottom: 12px;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 .roadmap{
@@ -275,15 +272,6 @@ header{
 .modal-subtitle{
     font-size: 18px;
 }
-/* .modal-content::after{
-    content: "";
-    background-color: white;
-    z-index: 4;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-} */
 .bluredbackground{
     background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
@@ -334,5 +322,15 @@ footer{
 @media screen and (min-width: 1000px) {
     .whitepaper {
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1{
+        font-size: 50px;
+    }
+    .logo{
+        padding: 10px 10px;
+        height: 45px;
     }
 }
