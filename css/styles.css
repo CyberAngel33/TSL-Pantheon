@@ -205,6 +205,58 @@ header{
     font-size: 20px;
     border-top: 1px solid #5d0068;
 }
+.team-card-image{
+    position: relative;
+}
+.team-card-image::after{
+    height: 100%;
+    width: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 0.2s;
+    opacity: 0;
+}
+.fa-envelope{
+    width: 30px;
+    height: 30px;
+    color: #ec45ff;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    z-index: 3;
+}
+.team-card-image:hover .mailbox{
+    opacity: 1;
+}
+.team-card-image:hover::after{
+    opacity: 1;
+}
+.mailbox{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    z-index: 3;
+    padding: 5px;
+    border: 1px solid #ec45ff;
+    border-radius: 10px;
+    transition: 0.2s;
+    opacity: 0;
+}
+.mailbox:hover{
+    transform: scale(1.2);
+}
 .team-card img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -311,17 +363,24 @@ footer{
     background-color: #463249;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .navbar-nav {
       display: none;
     }
     .whitepaper {
       display: block;
     }
+    
+    .blank-card{
+        display: none;
+    }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
     .whitepaper {
         display: none;
+    }
+    .blank-card{
+        display: block;
     }
 }
 
