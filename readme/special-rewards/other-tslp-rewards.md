@@ -26,8 +26,8 @@ description: >-
 
 ## **Master Collector 5 ETH Rewards**
 
-&#x20;    ****     We will be rewarding a total of 5 ETH to the first person who collects the first TSLP of each base type. We will be monitoring the wallets that might be close to completing this challenge. The winner will also receive a unique role & badge on our Discord server. There will be a total of **8 different types.**
+&#x20;    ****     We will be rewarding a total of 5 ETH to the first person who collects the first TSLP of each base type. We will be monitoring the wallets that might be close to completing this challenge. The winner will also receive a unique role & badge on our Discord server. There will be a total of **5 different types.**
 
-**\*Note:** These 8 different types will be revealed after the launch.
+**\*Note:** These 5 different types will be revealed after the launch.
 
 **\*Note:** The rule may change to win the 5 Ethereum reward, but the 5 Etherium will still be drawn.

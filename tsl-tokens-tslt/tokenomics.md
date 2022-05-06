@@ -1,3 +1,3 @@
 # Tokenomics
 
-![](<../.gitbook/assets/Tokenomics (1).PNG>)
+![](../.gitbook/assets/279125654\_393331709340602\_8343947142286940129\_n.jpg)

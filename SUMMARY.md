@@ -7,7 +7,7 @@
     * [Exceptions & Alternatives](readme/special-rewards/exceptions-and-alternatives.md)
   * [TSLP Holders Rewards](readme/tslp-holders-rewards.md)
   * [TSLP Team](readme/tslp-team.md)
-  * [MILESTONES](readme/milestones.md)
+  * [RoadMap](readme/milestones.md)
   * [Sales Milestones](readme/sales-milestones.md)
   * [Opportunity](readme/opportunity.md)
   * [NFT Ownership](readme/nft-ownership.md)

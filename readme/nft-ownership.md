@@ -10,7 +10,7 @@ description: Intellectual Property Consumer Agreement
 
 ## **TSLPs**
 
-&#x20;    ****     The Minter has created or otherwise obtained all intellectual property rights to a variety of different bases, characteristics, and attributes (each an "Attribute"), which will be combined at random to create each TSLP (for example, earings, eyes, hats, neck, body, face, mouth, and material attributes, and/or the like). There will be no two TSLPs with the same set of Attributes. The collection consists of 10,000 randomly created and unique TSLPs that are stored as ERC-721 tokens on the Ethereum blockchain. Full intellectual and economic rights to your unique TSLPs are included in ownership.
+&#x20;    ****     The Minter has created or otherwise obtained all intellectual property rights to a variety of different bases, characteristics, and attributes (each an "Attribute"), which will be combined at random to create each TSLP (for example, earings, eyes, hats, body, face, mouth, backgrounds, and material attributes, and/or the like). There will be no two TSLPs with the same set of Attributes. The collection consists of 10,000 randomly created and unique TSLPs that are stored as ERC-721 tokens on the Ethereum blockchain. Full intellectual and economic rights to your unique TSLPs are included in ownership.
 
 
 
@@ -28,13 +28,13 @@ description: Intellectual Property Consumer Agreement
 
 ## **Resale**
 
-&#x20;    ****     Of course, you have the option to resell or otherwise transfer your TSLP to a third party. However, by purchasing the TSLP from Minter, you acknowledge and agree that all terms of this Agreement, including this Section 5, are binding on any subsequent owner, and that you will bind any subsequent owner to all terms of this Agreement, including this Section 5. (such that the subsequent owner must bind any succeeding owner to the terms of this Agreement, and so on, thus, causing all owners of the purchased TSLP to be subject to this Agreement).
+&#x20;    ****     Of course, you have the option to resell or otherwise transfer your TSLP to a third party. However, by purchasing the TSLP from Minter, you acknowledge and agree that all terms of this Agreement, including this Section, are binding on any subsequent owner and that you will bind any subsequent owner to all terms of this Agreement, including this Section. (such that the subsequent owner must bind any succeeding owner to the terms of this Agreement, and so on, thus, causing all owners of the purchased TSLP to be subject to this Agreement).
 
 
 
 ## **Miscellaneous**
 
-&#x20;    ****     Of course, you have the option to resell or otherwise transfer your TSLP to a third party. However, by purchasing the TSLP from Minter, you acknowledge and agree that all terms of this Agreement, including this Section 5, are binding on any subsequent owner, and that you will bind any subsequent owner to all terms of this Agreement, including this Section 5. (such that the subsequent owner must bind any succeeding owner to the terms of this Agreement, and so on, thus, causing all owners of the purchased TSLP to be subject to this Agreement).
+&#x20;    **I**f any provision of this Agreement or any portion thereof is found to be illegal, invalid, void, or unenforceable, such provision shall be deemed stricken and deleted from this Agreement to the same extent and effect as if never included herein, but all other provisions shall remain in full force and effect. This Agreement is binding on each party and their respective heirs and assigns and inures to their benefit.
 
 
 

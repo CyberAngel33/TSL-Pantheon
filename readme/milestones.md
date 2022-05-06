@@ -1,4 +1,4 @@
-# MILESTONES
+# RoadMap
 
 ## **2022 Q1-Q2  Instigation**
 
@@ -25,4 +25,5 @@
 * Final marketing and PR campaigns. (interviews, AMAs, etc.)
 * Special 5 NFT collection.
 * TSLP Merchandise store.
-* **TSL Pantheon 2.0**
+
+****

@@ -25,21 +25,21 @@ description: >-
 
 
 
-### **Custom TSLP Sharkcart by Wrenchie**
+### **Custom TSLP Shark Kart by Wrenchie**
 
-&#x20;    ****     The Sharkcart will be built as soon as we meet the 25% sales goal and will be shipped immediately. We will give Wrenchie NFT holders additional 48 hours to Email us at **TSL@TSLPantheon.com** to represent him or herself to us and have additional **KYC**, in case to prepare documents where we will transfer full ownership of the Sharkcart.  In the case that KYC won't happen, the allocation for the Sharkcart will be repurposed for the TSL Holders community. If for any reason, Wrenchie is unable to deliver the Sharkcart or we can’t ship it, “Owner” will be rewarded **$12,000** as compensation.
+&#x20;    ****     The Shark Kart will be built as soon as we meet the 25% sales goal and will be shipped immediately. We will give Wrenchie NFT holders additional 48 hours to Email us at **TSL@TSLPantheon.com** to represent him or herself to us and have additional **KYC**, in case to prepare documents where we will transfer full ownership of the Shark Kart.  In the case that KYC won't happen, the allocation for the Shark Kart will be repurposed for the TSL Holders community. If for any reason, Wrenchie is unable to deliver the Shark Kart or we can’t ship it, “Owner” will be rewarded **$10,000** as compensation.
 
 
 
 ### &#x20;**5 mystery NFTs**
 
-&#x20;    ****     As we already mentioned we are building a very exciting and intriguing collaboration with other NFT projects and clothing designers and more information about Mystery NFTs will be announced as soon as deals with creators are finalized.  If for any reason, our deals with collaborators and project creators will not work out, “Owners” will be rewarded **$7,500** as compensation.
+&#x20;    ****     As we already mentioned we are building a very exciting and intriguing collaboration with other NFT projects and clothing designers and more information about Mystery NFTs will be announced as soon as deals with creators are finalized.  If, for any reason, our deals with collaborators and project creators will not work out, “Owners” will be rewarded **$7,500** as compensation.
 
 
 
 ### **A permanent place in the TSLP, with personalized comic book mini-series, one of a kind special comic book issue.**
 
-&#x20;    ****     The permanent TSLP place in the graveyard will be built in one of the most volatile Metaverses out there! The chosen platform will be revealed in the future so stay tuned! Since the personalized comic book mini-series and a permanent place in the TSLP is hard to evaluate monetarily. We decided to just bridge the gap between the previous rewards and this one by compensating the winner with **$50,000** if the team is unable to provide the prizes.
+&#x20;    ****     The permanent TSLP place in the graveyard will be built in one of the most volatile Metaverses out there! The chosen platform will be revealed in the future so stay tuned! Since the personalized comic book mini-series and a permanent place in the TSLP is hard to evaluate monetarily. We decided to just bridge the gap between the previous rewards and this one by compensating the winner with **$30,000** if the team is unable to provide the prizes.
 
 
 

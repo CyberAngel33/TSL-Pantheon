@@ -11,7 +11,7 @@ The TSL Pantheon (TSLP) was created by NFT collectors, artists, and experts with
 * Thousands of collectors using both our physical and Metaverse merch.
 * Being an instance for destiny collections, wherein the artwork and foundations of a venture are valued - no longer simply the hype.
 * Eventually turning into a standing image withinside the virtual global, along with different groundbreaking projects.
-* **Doz**ens of collectors interacting each withinside the actual international and Metaverse
+* Dozens of collectors interacting each withinside the actual international and Metaverse
 
 ## **Strategy & Key Features**
 
@@ -21,5 +21,5 @@ The TSL Pantheon (TSLP) was created by NFT collectors, artists, and experts with
 * **Fair Distribution**. The base price of **0.05 ETH**(Mint price. No Bonding curves, tiers, or reserved TSLPs.
 * All 10,000 will be up for grabs by the entire NFT community.
 * Community events, rewards, virtual interactions, raffles, and more.
-* Rewards. (20% will be given back to the community through rewards, events, giveaways, and more.)
+* Rewards. (up to 20% will be given back to the community through rewards, events, giveaways, and more.)
 * A strong team of 10+ members.

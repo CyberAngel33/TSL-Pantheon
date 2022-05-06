@@ -24,7 +24,7 @@ description: Our team information, details, and more.
 
 ## **Artwork**
 
-&#x20;    ****     All TSLPs were designed by Ghetto Picasso & Lotus, architects, self-taught artists and creative junkies with tremendous skills and passion. If there is one thing you will be amazed by in this collection, it's the amazing characters created by these guys. Over two months of work went into the creation of all our artwork. The final result is an amazing combination of quality, attractiveness, and overall amazing characters of TSL Pantheon.
+&#x20;    ****     All TSLPs were designed by Ghetto Picasso & Lord Lotus, architects, self-taught artists and creative junkies with tremendous skills and passion. If there is one thing you will be amazed by in this collection, it's the amazing characters created by these guys. Over two months of work went into the creation of all our artwork. The final result is an amazing combination of quality, attractiveness, and overall amazing characters of TSL Pantheon.
 
 
 

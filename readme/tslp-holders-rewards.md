@@ -14,7 +14,7 @@ description: >-
 
 ## **Zombies - (20+ TSLP)**
 
-&#x20;   Our **Zombies** are a necessary part of our community. The Zombie club will be the largest "Zombie" club, filled with our fantastic Pantheon members. This is why we decided to reward every holder who owns **20+ TSLPs!** To claim your Zombie Shark Rewards, you must own 20+ TSLPs and hold them for over **16 days**. Zombie Sharks who maintain their status will receive **extra rewards, airdrops, and other goodies every few weeks!**
+&#x20;   Our **Zombies** are a necessary part of our community. The Zombie club will be the largest "Zombie" club, filled with our fantastic Pantheon members. This is why we decided to reward every holder who owns **20+ TSLPs!** To claim your Zombie Rewards, you must own 20+ TSLPs and hold them for over **16 days**. Zombies who maintains their status will receive **extra rewards, airdrops, and other goodies every few months!**
 
 ****
 
