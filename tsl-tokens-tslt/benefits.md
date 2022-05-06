@@ -26,6 +26,4 @@ Tokenized digital game assets may be readily exchanged in main and secondary mar
 
 The blockchain enables games to make use of shared assets. Other games may reuse items, characters, and other game components. These gaming goods are no longer constrained by a limited digital environment.
 
-
-
-![](../.gitbook/assets/Capture.PNG)
+![](<../.gitbook/assets/INTEROPERABILITY of CROSS-APPLICATION.PNG>)
