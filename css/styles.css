@@ -60,7 +60,7 @@ header{
     transform-origin: 0 0;
 }
 .home{
-    background-image: url("../img/home-background.png");
+    background-image: url("../img/home-background1-01.png");
     background-size: cover;
     background-position: top-right;
     background-repeat: no-repeat;
@@ -98,6 +98,57 @@ header{
 }
 .opensea:hover{
     background-color: #2081e2;
+}
+.mint-glow{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: rgb(93, 0, 104);
+    height: 40%;
+    width: max-content;
+    border-radius: 20px;
+    margin-top: 5px;
+    align-self: center;
+    align-content: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+}
+.mint-glow::before {
+    content: "";
+    background: linear-gradient( 45deg, #9a00ac, #5d0068,#00cbff, #9a00ac);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    -webkit-animation: glowing 20s linear infinite;
+    -moz-animation: glowing 20s linear infinite;
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+.mint-glow:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(93, 0, 104);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.mint-glow:hover:after {
+    background: transparent;
+}
+.mint-glow:hover:before {
+    opacity: 1;
 }
 .glow-on-hover {
     width: 100%;
@@ -143,6 +194,14 @@ header{
 }
 .glow-on-hover:hover:before {
     opacity: 1;
+}
+
+.mint-scale{
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    position: relative;
+    display: flex;
 }
 .about{
     background-color: #2B192E;
@@ -208,6 +267,9 @@ header{
 .team-card-image{
     position: relative;
 }
+
+
+
 .team-card-image::after{
     height: 100%;
     width: 100%;
@@ -226,37 +288,56 @@ header{
     transition: 0.2s;
     opacity: 0;
 }
+
+.card-body{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+.textincard{
+    height: auto;
+    width: 80%;
+    position: relative;
+}
+.mailbox{
+    height: auto;
+    width: 10%;
+    float: right;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 .fa-envelope{
     width: 30px;
     height: 30px;
     color: #ec45ff;
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 10px);
+    position: relative;
     z-index: 3;
 }
-.team-card-image:hover .mailbox{
+.fa-envelope:hover{
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+
+.team-card-image:hover .personimg{
     opacity: 1;
 }
 .team-card-image:hover::after{
     opacity: 1;
 }
-.mailbox{
-    width: 50px;
-    height: 50px;
+.personimg{
     position: absolute;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px);
+    top: 0px;
+    left: 0px;
     z-index: 3;
-    padding: 5px;
-    border: 1px solid #ec45ff;
-    border-radius: 10px;
     transition: 0.2s;
     opacity: 0;
+    width: 100%;
 }
-.mailbox:hover{
-    transform: scale(1.2);
+
+.personimg img{
+    width: 100%;
 }
+
 .team-card img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
