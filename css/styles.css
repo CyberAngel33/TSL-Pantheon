@@ -505,6 +505,33 @@ footer{
     background-color: #463249;
 }
 
+.games{
+    height: 40vh;
+}
+
+.games img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transform: scale(1);
+    transition: 0.2s;
+    filter: none;
+    filter: drop-shadow(9px 14px 13px #000);
+}
+
+.games img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.games img:not() {
+    filter: grayscale(100%);
+
+  }
+
+  
+
+
 @media screen and (max-width: 992px) {
     .navbar-nav {
       display: none;
