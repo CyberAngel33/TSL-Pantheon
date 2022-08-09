@@ -81,7 +81,7 @@
                 </a>
             </div>
         </div>
-        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="bluredbackground" onclick="modalClose()"></div>
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -105,8 +105,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <section id="home" class="home d-flex justify-content-center align-items-center pt-3">
+        </div> -->
+        <section id="home" class="home d-flex flex-column justify-content-center align-items-center pt-3">
             <div class="home-container container row justify-content-center align-items-center p-5 mt-3">
                 <div class="col-lg-6 col-sm-12">
                     <img class=" home-image" src="img/main.gif" alt="NFTs">
@@ -157,14 +157,49 @@
                                 </a>
                             </address>
                         </div>
-                        <div class="mint-scale"></div>
+                        <div class="col-lg-12 col-md-6 col-sm-12 contract-address d-flex flex-row justify-content-between">
+                            <p class="text-white">
+                                0x31d45de84fdE2fB36575085e05754a4932DD5170
+                            </p>
+                            <a href="https://onaircode.com/html-css-custom-scrollbar-examples/" class="text-white" target="_blank">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-white"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <div class="tombstones d-flex row">
+                <div class="col-2"><img src="img/tombstone01.png" alt="tombstone"></div>
+                <div class="col-2"><img src="img/tombstone02.png" alt="tombstone"></div>
+                <div class="col-2"><img src="img/tombstone03.png" alt="tombstone"></div>
+                <div class="col-2"><img src="img/tombstone04.png" alt="tombstone"></div>
+                <div class="col-2"><img src="img/tombstone05.png" alt="tombstone"></div>
+                <div class="col-2"><img src="img/tombstone06.png" alt="tombstone"></div>
+            </div>
         </section>
     </header>
     <main>
+        <section class="levels d-flex justify-content-center flex-column align-items-center">
+            <h1 class="text-white text-center p-2 mt-2">Evolution Levels</h1>
+            <div class="container-fluid row">
+                <div class="level-box col-3 p-5">
+                    <img src="img/10.png" alt="">
+                    <h3 class="text-center text-white mt-3">Gravestone</h3>
+                </div>
+                <div class="level-box col-3 p-5">
+                    <img src="img/10.png" alt="">
+                    <h3 class="text-center text-white mt-3">Level 2</h3>
+                </div>
+                <div class="level-box col-3 p-5">
+                    <img src="img/10.png" alt="">
+                    <h3 class="text-center text-white mt-3">Level 3</h3>
+                </div>
+                <div class="level-box col-3 p-5">
+                    <img src="img/10.png" alt="">
+                    <h3 class="text-center text-white mt-3">Level 4</h3>
+                </div>
+            </div>
+        </section>
         <!-- <div class="transition">
             <img src="img/Bck-2.png" alt="" class="img-fluid">
         </div> -->
@@ -253,7 +288,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container d-flex flex-row align-items-center text-white p-3 m-5 border-bottom"  onclick="openclose(this)" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <div class="container d-flex flex-row align-items-center text-white p-3 m-4 border-bottom"  onclick="openclose(this)" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <a class="faq-question">
                     Sales Milstones
                 </a>
@@ -261,7 +296,7 @@
             </div>
             <div class="collapse" id="collapseExample4">
                 <div class="text-color faq-text">
-                    <div class="home-container container row justify-content-center align-items-center p-5 mt-3">
+                    <div class="home-container container row justify-content-center align-items-center p-5 mt-2">
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="col-lg-3 col-sm-12">
                                 <img class="home-image" src="img/10.png" alt="NFTs">
@@ -381,9 +416,9 @@
                     <div class="team-card">
                         <div class="team-card-image">
                             <img src="img/CyberAngel.png" class="card-img-top" alt="...">
-                                <div class="personimg">
-                                    <img src="img/Error404-2-01.jpg">
-                                </div>
+                            <div class="personimg">
+                                <img src="img/Error404-2-01.jpg">
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="textincard">
