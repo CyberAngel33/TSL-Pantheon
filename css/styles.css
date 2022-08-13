@@ -290,6 +290,7 @@ header{
     position: fixed;
     right: -40px;
     top: 10vh;
+    z-index: 5;
     transition: 0.2s;
 }
 #faq{
@@ -507,6 +508,7 @@ footer{
 
 .games{
     height: 40vh;
+    transition: 0.2s;
 }
 
 .games img{
@@ -520,7 +522,7 @@ footer{
 }
 
 .games img:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: 0.3s;
 }
 

@@ -44,5 +44,21 @@ function back(obj){
 
 function onSubmit(token) {
     document.getElementById("demo-form").submit();
-  }
+}
 
+function darker(e){
+    let games = document.getElementsByClassName("games");
+    for(let i = 0; i < games.length; i++){
+        if(games[i] != e){
+            games[i].style.filter = 'grayscale(100%) blur(1px)';
+        }
+    }
+}
+function backfromdark(e){
+    let games = document.getElementsByClassName("games");
+    for(let i = 0; i < games.length; i++){
+        if(games[i] != e){
+            games[i].style.filter = 'grayscale(0%) blur(0px)';
+        }
+    }
+}
