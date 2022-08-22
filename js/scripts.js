@@ -1,64 +1,57 @@
 window.onscroll = function (e) {
-    let sidebar = document.getElementsByClassName("sidebar")[0];
-    let menu = document.getElementsByClassName("navbar")[0];
-    
-    if(window.scrollY > 80)
-        menu.style.background = "#5d0068";
-    else
-        menu.style.background = "transparent";
+  let sidebar = document.getElementsByClassName("sidebar")[0];
+  let menu = document.getElementsByClassName("navbar")[0];
 
-    if(window.scrollY > 600)
-        sidebar.style.right="0px";
-    else
-        sidebar.style.right="-40px";
-  };
+  if (window.scrollY > 80) menu.style.background = "#5d0068";
+  else menu.style.background = "transparent";
 
-function openclose(obj){
-    i = obj.getElementsByClassName("fa-solid")[0];
-    if(i.classList.contains("fa-plus")){
-        i.classList.remove("fa-plus");
-        i.classList.add("fa-minus")
-    }
-    else{
-        i.classList.remove("fa-minus")
-        i.classList.add("fa-plus");
-    }
-}
-function modal(){
-    document.querySelector("#Modal").classList.add("show");
-    document.querySelector("#Modal").style.display= "block";
-}
-function modalClose(){
-    document.querySelector("#Modal").classList.add("show");
-    document.querySelector("#Modal").style.display= "none";
+  if (window.scrollY > 600) sidebar.style.right = "0px";
+  else sidebar.style.right = "-40px";
+};
 
+function openclose(obj) {
+  i = obj.getElementsByClassName("fa-solid")[0];
+  if (i.classList.contains("fa-plus")) {
+    i.classList.remove("fa-plus");
+    i.classList.add("fa-minus");
+  } else {
+    i.classList.remove("fa-minus");
+    i.classList.add("fa-plus");
+  }
 }
-function comingsoon(obj){
-    obj.setAttribute("data-text", obj.children[0].innerHTML)
-    obj.children[0].innerHTML = "Coming Soon!";
-    
+function modal() {
+  document.querySelector("#Modal").classList.add("show");
+  document.querySelector("#Modal").style.display = "block";
 }
-function back(obj){
-    obj.children[0].innerHTML = obj.getAttribute("data-text")
+function modalClose() {
+  document.querySelector("#Modal").classList.add("show");
+  document.querySelector("#Modal").style.display = "none";
+}
+function comingsoon(obj) {
+  obj.setAttribute("data-text", obj.children[0].innerHTML);
+  obj.children[0].innerHTML = "Coming Soon!";
+}
+function back(obj) {
+  obj.children[0].innerHTML = obj.getAttribute("data-text");
 }
 
 function onSubmit(token) {
-    document.getElementById("demo-form").submit();
+  document.getElementById("demo-form").submit();
 }
 
-function darker(e){
-    let games = document.getElementsByClassName("games");
-    for(let i = 0; i < games.length; i++){
-        if(games[i] != e){
-            games[i].style.filter = 'grayscale(100%) blur(1px)';
-        }
+function darker(e) {
+  let games = document.getElementsByClassName("games");
+  for (let i = 0; i < games.length; i++) {
+    if (games[i] != e) {
+      games[i].style.filter = "grayscale(100%) blur(1px)";
     }
+  }
 }
-function backfromdark(e){
-    let games = document.getElementsByClassName("games");
-    for(let i = 0; i < games.length; i++){
-        if(games[i] != e){
-            games[i].style.filter = 'grayscale(0%) blur(0px)';
-        }
+function backfromdark(e) {
+  let games = document.getElementsByClassName("games");
+  for (let i = 0; i < games.length; i++) {
+    if (games[i] != e) {
+      games[i].style.filter = "grayscale(0%) blur(0px)";
     }
+  }
 }
