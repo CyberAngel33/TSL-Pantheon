@@ -55,3 +55,15 @@ function backfromdark(e) {
     }
   }
 }
+
+function ChangeActiveMilestone(e){
+  if (!e.classList.contains("active-milstone")) {
+    let Milestones = document.getElementsByClassName("milestones");
+    for (let i = 0; i < Milestones.length; i++) {
+      if (Milestones[i].classList.contains("active-milstone")) {
+        Milestones[i].classList.remove("active-milstone");
+      }
+    }
+    e.classList.add("active-milstone");
+  }
+}
