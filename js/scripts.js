@@ -1,3 +1,34 @@
+var swiper = new Swiper(".mySwiper1", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: -25,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  speed: 1800,
+  autoplay: {
+    delay: 1300,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar"
+  },
+  loop: true,
+});
+
+
+let circles = document.getElementsByClassName("milestonz")[0];
+let pagin = document.getElementsByClassName("mySwiper1")[0];
+window.onload = function(){
+  //modal();
+}
+
 window.onscroll = function (e) {
   let sidebar = document.getElementsByClassName("sidebar")[0];
   let menu = document.getElementsByClassName("navbar")[0];
@@ -5,7 +36,7 @@ window.onscroll = function (e) {
   if (window.scrollY > 80) menu.style.background = "#5d0068";
   else menu.style.background = "transparent";
 
-  if (window.scrollY > 600) sidebar.style.right = "0px";
+  if (window.scrollY > 600 && window.outerWidth > 576) sidebar.style.right = "0px";
   else sidebar.style.right = "-40px";
 };
 
@@ -66,4 +97,14 @@ function ChangeActiveMilestone(e){
     }
     e.classList.add("active-milstone");
   }
+}
+
+let openState = 0;
+let menu = document.getElementsByClassName("responsive-nav")[0];
+function MenuOpenClose(){
+  if(!openState)
+    menu.style.display = "block";
+  else
+    menu.style.display = "none";
+  openState = !openState;
 }
