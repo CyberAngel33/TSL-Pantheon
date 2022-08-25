@@ -99,11 +99,10 @@ function ChangeActiveMilestone(e){
   }
 }
 
-let openState = 0;
-let menu = document.getElementsByClassName("responsive-nav")[0];
+let menu = document.getElementsByClassName("responsive-navbar-nav")[0];
 function MenuOpenClose(){
-  if(!openState)
-    menu.style.display = "block";
+  if(menu.style.display == "none")
+    menu.style.display = "flex";
   else
     menu.style.display = "none";
   openState = !openState;
