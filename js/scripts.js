@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper1", {
+var swiper1 = new Swiper(".mySwiper1", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -23,11 +23,36 @@ var swiper = new Swiper(".mySwiper1", {
   loop: true,
 });
 
+var swiper2 = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: -25,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  speed: 1800,
+  autoplay: {
+    delay: 1300,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true,
+});
+
 
 let circles = document.getElementsByClassName("milestonz")[0];
 let pagin = document.getElementsByClassName("mySwiper1")[0];
 window.onload = function () {
   //modal();
+  if (window.scrollY > 80) document.getElementsByClassName("navbar")[0].style.background = "#5d0068";
+  else document.getElementsByClassName("navbar")[0].style.background = "transparent";
 }
 
 window.onscroll = function (e) {
@@ -71,23 +96,6 @@ function onSubmit(token) {
   document.getElementById("demo-form").submit();
 }
 
-function darker(e) {
-  let games = document.getElementsByClassName("games");
-  for (let i = 0; i < games.length; i++) {
-    if (games[i] != e) {
-      games[i].style.filter = "grayscale(100%) blur(1px)";
-    }
-  }
-}
-function backfromdark(e) {
-  let games = document.getElementsByClassName("games");
-  for (let i = 0; i < games.length; i++) {
-    if (games[i] != e) {
-      games[i].style.filter = "grayscale(0%) blur(0px)";
-    }
-  }
-}
-
 function ChangeActiveMilestone(e) {
   if (!e.classList.contains("active-milstone")) {
     let Milestones = document.getElementsByClassName("milestones");
@@ -100,6 +108,7 @@ function ChangeActiveMilestone(e) {
   }
 }
 
+MenuOpenClose();
 function MenuOpenClose() {
   let menu = document.getElementsByClassName("responsive-navbar-nav")[0];
   if (menu.style.display == "none") {
