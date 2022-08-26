@@ -191,7 +191,7 @@ header {
 }
 
 .levels {
-  background-color: #5d0068;
+  background-color: #2b192e;
   padding: 0 100px;
 }
 
@@ -317,6 +317,71 @@ header {
 
 .mint-glow:hover:before {
   opacity: 1;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+.token-page-button-container {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: rgb(93, 0, 104);
+  height: 50px;
+  width: max-content;
+  border-radius: 20px;
+  margin-top: 5px;
+  align-self: center;
+  align-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.token-page-button-container::before {
+  content: "";
+  background: linear-gradient(45deg, #d5194b, #eb628c, #f2376e, #f21c58);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  -webkit-animation: glowing 20s linear infinite;
+  -moz-animation: glowing 20s linear infinite;
+  animation: glowing 20s linear infinite;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.token-page-button-container:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(93, 0, 104);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.token-page-button-container:hover:after {
+  background: transparent;
+}
+
+.token-page-button-container:hover:before {
+  opacity: 1;
+}
+
+.token-page-button-container a{
+  width: 200px;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .glow-on-hover {
