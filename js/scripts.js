@@ -3,6 +3,7 @@ var swiper = new Swiper(".mySwiper1", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  freeMode: true,
   coverflowEffect: {
     rotate: 50,
     stretch: -25,
@@ -25,7 +26,7 @@ var swiper = new Swiper(".mySwiper1", {
 
 let circles = document.getElementsByClassName("milestonz")[0];
 let pagin = document.getElementsByClassName("mySwiper1")[0];
-window.onload = function(){
+window.onload = function () {
   //modal();
 }
 
@@ -33,7 +34,7 @@ window.onscroll = function (e) {
   let sidebar = document.getElementsByClassName("sidebar")[0];
   let menu = document.getElementsByClassName("navbar")[0];
 
-  if (window.scrollY > 80) menu.style.background = "#5d0068";
+  if (window.scrollY > 80 || document.getElementsByClassName("responsive-navbar-nav")[0].style.display == "flex") menu.style.background = "#5d0068";
   else menu.style.background = "transparent";
 
   if (window.scrollY > 600 && window.outerWidth > 576) sidebar.style.right = "0px";
@@ -87,7 +88,7 @@ function backfromdark(e) {
   }
 }
 
-function ChangeActiveMilestone(e){
+function ChangeActiveMilestone(e) {
   if (!e.classList.contains("active-milstone")) {
     let Milestones = document.getElementsByClassName("milestones");
     for (let i = 0; i < Milestones.length; i++) {
@@ -99,11 +100,16 @@ function ChangeActiveMilestone(e){
   }
 }
 
-let menu = document.getElementsByClassName("responsive-navbar-nav")[0];
-function MenuOpenClose(){
-  if(menu.style.display == "none")
+function MenuOpenClose() {
+  let menu = document.getElementsByClassName("responsive-navbar-nav")[0];
+  if (menu.style.display == "none") {
     menu.style.display = "flex";
-  else
+    document.getElementsByClassName("navbar")[0].style.background = "#5d0068";
+  }
+  else {
     menu.style.display = "none";
+    if (window.scrollY < 80)
+      document.getElementsByClassName("navbar")[0].style.background = "none";
+  }
   openState = !openState;
 }
