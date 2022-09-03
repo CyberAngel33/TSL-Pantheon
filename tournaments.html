@@ -27,7 +27,7 @@
         <div class="d-flex justify-content-end ">
           <ul class="navbar-nav flex-row">
             <li class="nav-item underline">
-              <a class="nav-link text-white p-4" href="#">TSL Token</a>
+              <a class="nav-link text-white p-4" href="token.html">TSL Token</a>
             </li>
             <li class="nav-item underline">
               <a class="nav-link text-white p-4" href="tournaments.html">Tournaments</a>
@@ -51,16 +51,13 @@
     <div class="responsive-nav">
       <ul class="responsive-navbar-nav flex-column">
         <li class="nav-item underline">
-          <a class="nav-link text-white p-2" href="#">TSL Token</a>
+          <a class="nav-link text-white p-2" href="token.html">TSL Token</a>
         </li>
         <li class="nav-item underline">
           <a class="nav-link text-white p-2" href="tournaments.html">Tournaments</a>
         </li>
         <li class="nav-item underline">
           <a class="nav-link text-white p-2" href="https://whitepaper.tslpantheon.com" target="_blank">Whitepaper</a>
-        </li>
-        <li class="nav-item underline">
-          <a class="nav-link text-white p-2" href="Mint.html">Free Mint</a>
         </li>
       </ul>
     </div>
@@ -98,6 +95,20 @@
   <script src="js/bootstrap.min.js"></script>
   <script type="module" src="js/firebase.js"></script>
   <script>
+    MenuOpenClose();
+    function MenuOpenClose() {
+      let menu = document.getElementsByClassName("responsive-navbar-nav")[0];
+      if (menu.style.display == "none") {
+        menu.style.display = "flex";
+        document.getElementsByClassName("navbar")[0].style.background = "#5d0068";
+      }
+      else {
+        menu.style.display = "none";
+        if (window.scrollY < 80)
+          document.getElementsByClassName("navbar")[0].style.background = "none";
+      }
+      openState = !openState;
+    }
     function darker(e) {
       let games = document.getElementsByClassName("games");
       for (let i = 0; i < games.length; i++) {

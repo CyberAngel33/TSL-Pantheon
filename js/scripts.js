@@ -46,6 +46,33 @@ var swiper2 = new Swiper(".mySwiper", {
   loop: true,
 });
 
+var swiper3 = new Swiper(".mySwiper2", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 2,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  speed: 1800,
+  autoplay: {
+    delay: 1300,
+    disableOnInteraction: false,
+  },
+  loop: true,
+});
+
+var swiper4 = new Swiper(".mySwiper3", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true,
+});
 
 let circles = document.getElementsByClassName("milestonz")[0];
 let pagin = document.getElementsByClassName("mySwiper1")[0];
