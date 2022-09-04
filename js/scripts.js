@@ -147,5 +147,43 @@ function MenuOpenClose() {
     if (window.scrollY < 80)
       document.getElementsByClassName("navbar")[0].style.background = "none";
   }
-  openState = !openState;
 }
+
+const config = {
+  type: 'doughnut',
+  data: {
+    labels: [
+      'Seed Sale',
+      'Private A',
+      'Private B',
+      'Launchpad',
+      'Staking',
+      'Development',
+      'Team',
+      'Game Launch',
+      'Treasury',
+      'updates',
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [4, 10, 10, 4, 20, 15, 9, 10, 8, 10],
+      backgroundColor: [
+        'rgb(235, 98, 140)',
+        'rgb(242, 55, 110)',
+        'rgb(147, 22, 90)',
+        'rgb(105, 18, 69)',
+        'rgb(20, 2, 64)',
+        'rgb(89, 10, 42)',
+        'rgb(160, 19, 62)',
+        'rgb(209, 14, 84)',
+        'rgb(239, 35, 98)',
+        'rgb(255, 0, 66)'
+      ],
+      hoverOffset: 10,
+      borderColor: "transparent"
+    }]
+  },
+};
+
+const ctx = document.getElementById('myChart').getContext('2d');
+const myChart = new Chart(ctx, config);

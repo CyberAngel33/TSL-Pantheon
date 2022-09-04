@@ -631,8 +631,8 @@ header {
   display: none;
 }
 
-.mySwiper3 .swiper-wrapper{
-  /* width: 80vw; */
+.mySwiper3 .swiper-button-prev, .mySwiper3 .swiper-button-next{
+  color: #9a00ac;
 }
 
 .textincard {
@@ -1011,6 +1011,24 @@ footer {
   filter: drop-shadow(8px 15px 11px #272727);
 }
 
+.token-swiper .card{
+  background-color: #9a00ac;
+  border-radius: 10px;
+  filter: drop-shadow(8px 15px 11px #272727);
+  position: relative;
+}
+
+.token-swiper .card:first-child::after{
+  content: "Popular";
+  position: absolute;
+  right: 5px;
+  top: -5px;
+  background-color: #2b192e;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 0 0% 10% 10%;
+}
+
 .token-update{
   background-color: #5d0068;
 }
@@ -1110,6 +1128,10 @@ footer {
   line-height: 35px;
   font-weight: bold;
   font-size: 16px;
+}
+
+.tokenomics{
+  background-color: #2b192e;
 }
 
 @media screen and (max-width: 992px) {
