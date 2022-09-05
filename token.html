@@ -10,12 +10,8 @@
   <meta property="og:image" content="https://tslpantheon.com/logo.png" />
   <title>TSL Pantheon</title>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/styles.css" />
   <script src="https://kit.fontawesome.com/4d9c3952df.js" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -102,7 +98,7 @@
       </div>
     </section>
     <section class="token-update d-flex flex-column pt-5 pb-5">
-      <h2 class="text-white text-center">Purchase TSLT</h2>
+      <h1 class="text-white text-center">Purchase TSLT</h1>
       <div class="card-contanier container row justify-content-around mt-3 p-2">
         <div class="card col-lg-2 col-md-3 col-sm-4 col-sx-6 m-2">
           <div class="card-body">
@@ -253,14 +249,178 @@
       </div>
     </section>
     <section class="tokenomics p-5">
-      <h2 class="text-white text-center">Tokenomics</h2>
-      <div class="col-4 m-auto">
-        <canvas id="myChart" width="100" height="100"></canvas>
+      <h1 class="text-white text-center">Tokenomics</h1>
+      <div class="col-lg-4 col-sm-12 m-auto">
+        <canvas id="myChart" width="450px" height="450px" style="overflow: visible;"></canvas>
+      </div>
+      <div class="table-3 mt-4">
+        <table>
+          <tbody>
+            <tr>
+              <th>Supply Rounds</th>
+              <th>Percantage</th>
+              <th>Tokens</th>
+              <th>Price Per Token</th>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Seed Sale</td>
+              <td data-th="Percantage">4%</td>
+              <td data-th="Token">40,000,000</td>
+              <td data-th="Price Per Token">$0.01</td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Private A</td>
+              <td data-th="Percantage">10%</td>
+              <td data-th="Token">100,000,000</td>
+              <td data-th="Price Per Token">$0.02</td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Private B</td>
+              <td data-th="Percantage">10%</td>
+              <td data-th="Token">100,000,000</td>
+              <td data-th="Price Per Token">$0.05</td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Launchpad</td>
+              <td data-th="Percantage">4%</td>
+              <td data-th="Token">40,000,000</td>
+              <td data-th="Price Per Token">$0.1</td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Staking</td>
+              <td data-th="Percantage">20%</td>
+              <td data-th="Token">200,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Development</td>
+              <td data-th="Percantage">15%</td>
+              <td data-th="Token">150,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Team</td>
+              <td data-th="Percantage">9%</td>
+              <td data-th="Token">90,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Game Launch</td>
+              <td data-th="Percantage">10%</td>
+              <td data-th="Token">100,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Treasury</td>
+              <td data-th="Percantage">8%</td>
+              <td data-th="Token">80,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+            <tr>
+              <td data-th="Total TSLT Supply">Updates</td>
+              <td data-th="Percantage">100%</td>
+              <td data-th="Token">100,000,000</td>
+              <td data-th="Price Per Token"></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </header>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <main>
+    <section class="token-description pt-4 pb-4">
+      <div class="container">
+        <h1 class="text-white text-center">Description</h1>
+        <p class="text-white mt-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nulla ratione fuga.
+          Tempore suscipit reprehenderit natus! Atque nihil labore eaque temporibus! Cum, ipsam nihil earum voluptates
+          reprehenderit saepe recusandae non!</p>
+      </div>
+    </section>
+
+    <section id="faq" class="d-flex align-items-center flex-column">
+      <h1 class="text-white text-center p-2 mt-5">FAQ</h1>
+      <div class="home-container container row justify-content-center align-items-center p-5 mt-3">
+        <div class="faq-container d-flex flex-row align-items-center text-white p-3" data-bs-toggle="collapse"
+          href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"
+          onclick="openclose(this)">
+          <a class="faq-question"> What is an NFT? </a>
+          <i class="text-white fa-solid fa-plus" style="font-size: 22px"></i>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="text-color faq-text card card-body">
+            <p class="text-white">
+              An NFT is a type of digital asset that reflects real-world
+              objects such as artwork, films, music, and in-game goods.
+              They're bought and traded online, often using cryptocurrency,
+              and they're usually created with the same software as many other
+              cryptos. An NFT (non-fungible token) is a non-interchangeable
+              unit of data stored on a blockchain, a form of digital ledger,
+              that can be sold and traded.
+            </p>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="faq-container d-flex flex-row align-items-center text-white p-3" data-bs-toggle="collapse"
+          href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5"
+          onclick="openclose(this)">
+          <a class="faq-question">
+            How do I become member of the TSL Pantheon?
+          </a>
+          <i class="text-white fa-solid fa-plus" style="font-size: 22px"></i>
+        </div>
+        <div class="collapse" id="collapseExample5">
+          <div class="text-color faq-text card card-body">
+            <p class="text-white">
+              It's pretty simple. You will be able to buy TSL Pantheon at our
+              Opensea.io platform. To get in the community and be updated,
+              follow our Twitter and Discord Channels.
+            </p>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="faq-container d-flex flex-row align-items-center text-white p-3" data-bs-toggle="collapse"
+          href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6"
+          onclick="openclose(this)">
+          <a class="faq-question"> How can I use my NFT? </a>
+          <i class="text-white fa-solid fa-plus" style="font-size: 22px"></i>
+        </div>
+        <div class="collapse" id="collapseExample6">
+          <div class="text-color faq-text card card-body">
+            <p class="text-white">
+              As a holder of TSLP, you will be able to participate in special
+              events and giveaways or sell them for a higher price. We have
+              different types of giveaways and events for different kind of
+              holders. Check what can you get
+              <a href="https://whitepaper.tslpantheon.com">here.</a>
+            </p>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------------------------------------------- -->
+        <div class="faq-container d-flex flex-row align-items-center text-white p-3" data-bs-toggle="collapse"
+          href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7"
+          onclick="openclose(this)">
+          <a class="faq-question">
+            Does owning more than one TSLP benefit me?
+          </a>
+          <i class="text-white fa-solid fa-plus" style="font-size: 22px"></i>
+        </div>
+        <div class="collapse" id="collapseExample7">
+          <div class="text-color faq-text card card-body">
+            <p class="text-white">
+              You will have an unique role in Discord, and thanks to these
+              roles, you will have more opportunities to participate in
+              giveaways and other activities. In the future, it will bring
+              considerably cooler benefits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 

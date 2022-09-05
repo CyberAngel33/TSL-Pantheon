@@ -89,11 +89,14 @@ window.onscroll = function (e) {
   if (window.scrollY > 80 || document.getElementsByClassName("responsive-navbar-nav")[0].style.display == "flex") menu.style.background = "#5d0068";
   else menu.style.background = "transparent";
 
-  if (window.scrollY > 600 && window.outerWidth > 576) sidebar.style.right = "0px";
-  else sidebar.style.right = "-40px";
+  if(sidebar != null){
+    if (window.scrollY > 600 && window.outerWidth > 576) sidebar.style.right = "0px";
+    else sidebar.style.right = "-40px";
+  }
 };
 
 function openclose(obj) {
+  console.log(obj);
   i = obj.getElementsByClassName("fa-solid")[0];
   if (i.classList.contains("fa-plus")) {
     i.classList.remove("fa-plus");
@@ -162,11 +165,12 @@ const config = {
       'Team',
       'Game Launch',
       'Treasury',
-      'updates',
+      'Updates',
     ],
     datasets: [{
       label: 'My First Dataset',
       data: [4, 10, 10, 4, 20, 15, 9, 10, 8, 10],
+      fillColor : "rgba(0, 0, 0, 1)",
       backgroundColor: [
         'rgb(235, 98, 140)',
         'rgb(242, 55, 110)',
@@ -179,11 +183,14 @@ const config = {
         'rgb(239, 35, 98)',
         'rgb(255, 0, 66)'
       ],
-      hoverOffset: 10,
-      borderColor: "transparent"
-    }]
+      hoverOffset: 30,
+      borderColor: "transparent",
+      tooltipCaretSize: 0
+    }],
   },
 };
 
 const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, config);
+Chart.defaults.color = "rgb(255, 255, 255, 0.9)";
+Chart.defaults.font.family = "Akaya Telivigala";
