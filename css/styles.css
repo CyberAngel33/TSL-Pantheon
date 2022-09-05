@@ -1006,17 +1006,6 @@ footer {
   position: relative;
 }
 
-.card-popular::after {
-  content: "Popular";
-  position: absolute;
-  right: 5px;
-  top: -5px;
-  background-color: #2b192e;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 0 0% 10% 10%;
-}
-
 .token-update {
   background-color: #5d0068;
 }
@@ -1026,17 +1015,6 @@ footer {
   border-radius: 10px;
   filter: drop-shadow(8px 15px 11px #272727);
   position: relative;
-}
-
-.token-update .card:last-child::after {
-  content: "Popular";
-  position: absolute;
-  right: 5px;
-  top: -5px;
-  background-color: #2b192e;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 0 0% 10% 10%;
 }
 
 .token-update .card-title,
