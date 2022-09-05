@@ -1006,7 +1006,7 @@ footer {
   position: relative;
 }
 
-.token-swiper .card:first-child::after {
+.card-popular::after {
   content: "Popular";
   position: absolute;
   right: 5px;
@@ -1213,6 +1213,10 @@ table td:before {
 
 .token-description{
   background-color: #9a00ac;
+}
+
+.chart-cont{
+  height: calc(100% + 100px);
 }
 @media (min-width: 600px) {
   table td:before {

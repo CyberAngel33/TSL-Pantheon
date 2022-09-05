@@ -188,6 +188,11 @@ const config = {
       tooltipCaretSize: 0
     }],
   },
+  options: {
+    layout: {
+      padding: 20
+    }
+  }
 };
 
 const ctx = document.getElementById('myChart').getContext('2d');
