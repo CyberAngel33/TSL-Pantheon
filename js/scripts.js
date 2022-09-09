@@ -194,8 +194,9 @@ const config = {
     }
   }
 };
-
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, config);
-Chart.defaults.color = "rgb(255, 255, 255, 0.9)";
-Chart.defaults.font.family = "Akaya Telivigala";
+if(document.getElementById('myChart') != null){
+  const ctx = document.getElementById('myChart').getContext('2d');
+  const myChart = new Chart(ctx, config);
+  Chart.defaults.color = "rgb(255, 255, 255, 0.9)";
+  Chart.defaults.font.family = "Akaya Telivigala";
+}

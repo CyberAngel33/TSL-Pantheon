@@ -1,18 +1,15 @@
-const initialize = () => {
-    //Basic Actions Section
-    const onboardButton = document.getElementById('connectButton');
-    const isMetaMaskInstalled = () => {
-      const { ethereum } = window;
-      return Boolean(ethereum && ethereum.isMetaMask);
-    };
-  
-    //------Inserted Code------\\
-    const MetaMaskClientCheck = () => {
-      if (!isMetaMaskInstalled()) {
-        onboardButton.innerText = 'Click here to install MetaMask!';
-      } else {
-        onboardButton.innerText = 'Connect';
-      }
-    };
-    MetaMaskClientCheck();
-  };
+async function connect() {
+  if (!window.ethereum) {
+    await window.ethereum.request({ method: "eth_requestAccounts" });
+    window.web3 = new Web3(window.ethereum);
+    const account = web3.eth.accounts;
+    //Get the current MetaMask selected/active wallet
+    const walletAddress = account.givenProvider.selectedAddress;
+    console.log(`Wallet: ${walletAddress}`);
+ 
+ } else {
+  console.log("No wallet");
+  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+  const account = accounts[0];
+ }
+ }
