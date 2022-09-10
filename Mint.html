@@ -39,8 +39,11 @@
               <a class="nav-link text-white p-4" href="https://whitepaper.tslpantheon.com"
                 target="_blank">Whitepaper</a>
             </li>
-            <div class="mint-glow">
-              <a class="mint-glow-text text-white p-4" href="mint.html">Mint For Free</a>
+            <li class="nav-item underline">
+              <a class="nav-link text-white p-4" href="mint.html">Minting</a>
+            </li>
+            <div class="mint-glow" id="connectWallet">  
+              <a class="mint-glow-text text-white p-4" onclick="connect()">Connect Wallet</a>
             </div>
           </ul>
           <div class="underline whitepaper me-3" onclick="MenuOpenClose()">
@@ -62,6 +65,9 @@
         <li class="nav-item underline">
           <a class="nav-link text-white p-2" href="https://whitepaper.tslpantheon.com"
             target="_blank">Whitepaper</a>
+        </li>
+        <li class="nav-item underline">
+          <a class="nav-link text-white p-2" href="token.html" >Minting</a>
         </li>
       </ul>
     </div>
@@ -99,7 +105,7 @@
                   Mint LV1 TSLP NFT's for free
                 </h2>
                 <address>
-                  <button onclick="connect()"
+                  <button
                     class="box glow-on-hover text-white d-flex justify-content-center align-items-center flex-column fw-bold">
                     Free Mint!
                   </button>
