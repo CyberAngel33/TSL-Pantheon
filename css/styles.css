@@ -730,6 +730,10 @@ header {
   border-radius: none;
 }
 
+#WalletModal .modal-content{
+  background-color: #45004d;
+}
+
 .modal-content label,
 input,
 h5 {
@@ -760,7 +764,7 @@ h5 {
 }
 
 .modal-header {
-  padding-bottom: 6px;
+  padding-bottom: 7px;
 }
 
 .modal-title {
