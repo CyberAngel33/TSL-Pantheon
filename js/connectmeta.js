@@ -1,7 +1,7 @@
 async function connect() {
   if (window.ethereum) {
-    if(ethereum.selectedAddress != null){
-      ethereum.selectedAddress = null;
+    if(ethereum.walletAddress != null){
+      ethereum.walletAddress = null;
     }
     else{
       const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
