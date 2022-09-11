@@ -41,7 +41,7 @@
               <a class="nav-link text-white p-4" href="mint.html">Minting</a>
             </li>
             <div class="mint-glow" id="connectWall">
-              <a class="mint-glow-text text-white p-4" onclick="connect()">Connect Wallet</a>
+              <a class="mint-glow-text text-white p-4" onclick="openWallet()">Connect Wallet</a>
             </div>
           </ul>
           <div class="underline whitepaper me-3" onclick="MenuOpenClose()">
@@ -68,31 +68,36 @@
         </li>
       </ul>
     </div>
-    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="bluredbackground"></div>
+    <div class="modal fade" id="WalletModal" tabindex="-1" aria-labelledby="WalletModalLabel" aria-hidden="true">
+      <div class="bluredbackground" onclick="closeWallet()"></div>
       <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header justify-content-center flex-column">
-                  <h4 class="modal-title text-center fw-bold" id="exampleModalLabel">Join Privatesale!</h4>
-                  <h5 class="modal-subtitle text-center">Become The First To Acquire TSLP</h5>
-              </div>
-              <div class="modal-body">
-                  <form>
-                      <div class="mb-3 d-flex flex-row">
-                          <label for="recipient-email" class="col-form-label">Email</label>
-                          <div class="input-form d-flex flex-row ms-3">
-                              <input type="email" class="form-control" id="recipient-email">
-                              <button type="submit" class="g-recaptcha btn btn-primary" id="EmailSubmit"
-                              data-sitekey="6LesNXwfAAAAAOwU40_N-M8QI3Y_o9ook_R6JHJf" 
-                              data-callback='onSubmit'
-                              data-action='submit'>Join!</button>
-                          </div>
-                      </div>
-                  </form>
-              </div>
+        <div class="modal-content">
+          <div class="modal-header justify-content-center flex-column">
+            <h4 class="modal-title text-center fw-bold" id="WalletModalLabel">Connect Wallet!</h4>
           </div>
+          <div class="modal-body row justify-content-between">
+            <div class="col-12 p-2">
+              <a class="box discord text-white d-flex justify-content-center align-items-center flex-row">
+                <img src="img/metamask.png" alt="" width="20px" height="20px">
+                Metamask
+              </a>
+            </div>
+            <div class="col-12 p-2">
+              <a class="box discord text-white d-flex justify-content-center align-items-center flex-row">
+                <img src="img/WalletConnect.png" alt="" width="20px" height="20px">
+                WalletConnect
+              </a>
+            </div>
+            <div class="col-12 p-2">
+              <a class="box discord text-white d-flex justify-content-center align-items-center flex-row">
+                <img src="img/Coinbase.png" alt="" width="20px" height="20px">
+                Coinbase
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-  </div> 
+    </div>
     <section id="home" class="home mint d-flex flex-column justify-content-center align-items-center pt-3">
       <div class="home-container container justify-content-center align-items-center p-5 mt-3">
         <div class="mint-page-container">

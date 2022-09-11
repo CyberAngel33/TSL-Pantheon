@@ -27,3 +27,12 @@
 //     wall.style.cursor = "pointer";
 //   }
 // }
+
+function openWallet() {
+  document.querySelector("#WalletModal").classList.add("show");
+  document.querySelector("#WalletModal").style.display = "block";
+}
+function closeWallet() {
+  document.querySelector("#WalletModal").classList.add("show");
+  document.querySelector("#WalletModal").style.display = "none";
+}

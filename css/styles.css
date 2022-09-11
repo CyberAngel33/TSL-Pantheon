@@ -227,6 +227,16 @@ header {
   filter: drop-shadow(13px 4px 10px #000);
 }
 
+.box:hover{
+  cursor: pointer;
+}
+
+.box img{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
 .discord:hover {
   background-color: #5865f2;
 }
@@ -704,8 +714,13 @@ header {
   font-size: 20px;
 }
 
-.modal-dialog {
+
+#Modal {
   margin: calc(50vh - 150px) auto;
+}
+
+#WalletModal{
+  margin: calc(50vh - 250px) auto;
 }
 
 .modal-content {
