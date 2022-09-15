@@ -828,6 +828,7 @@ footer {
   padding: 5px 15px;
   opacity: 0.8;
   z-index: 5;
+  border-top-left-radius: 20px;
 }
 
 footer p{
