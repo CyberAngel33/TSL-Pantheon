@@ -99,9 +99,11 @@ function openclose(obj) {
   console.log(obj);
   i = obj.getElementsByClassName("fa-solid")[0];
   if (i.classList.contains("fa-plus")) {
+    obj.style = "border-end-end-radius: 0px; border-end-start-radius: 0px";
     i.classList.remove("fa-plus");
     i.classList.add("fa-minus");
   } else {
+    obj.style = "border-end-end-radius: 20px; border-end-start-radius: 20px";
     i.classList.remove("fa-minus");
     i.classList.add("fa-plus");
   }
