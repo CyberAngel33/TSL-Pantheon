@@ -29,27 +29,28 @@
         </a>
         <div class="d-flex justify-content-end ">
           <ul class="navbar-nav flex-row">
-            <li class="nav-item underline">
-              <a class="nav-link text-white p-4" href="index.html">NFTs</a>
+            <li class="nav-item drop-item">
+              <a class="nav-link text-white p-4 active-nav-link">Main <i class="fa-solid fa-caret-down text-white"></i></a>
+              <ul class="nav-drop-item">
+                <li><a class="text-white p-3" href="index.html">NFTs</a></li>
+                <li><a class="text-white p-3" href="token.html">TSL Token</a></li>
+              </ul>
             </li>
-            <li class="nav-item underline">
-              <a class="nav-link text-white p-4" href="token.html">TSL Token</a>
-            </li>
-            <li class="nav-item underline">
+            <li class="nav-item">
               <a class="nav-link text-white p-4" href="tournaments.html">Tournaments</a>
             </li>
-            <li class="nav-item underline">
+            <li class="nav-item">
               <a class="nav-link text-white p-4" href="https://whitepaper.tslpantheon.com"
                 target="_blank">Whitepaper</a>
             </li>
-            <li class="nav-item underline">
+            <li class="nav-item">
               <a class="nav-link text-white p-4" href="mint.html">Minting</a>
             </li>
-            <div class="mint-glow" id="connectWallet">  
-              <a class="mint-glow-text text-white p-4" onclick="connect()">Connect Wallet</a>
+            <div class="mint-glow" id="connectWall">
+              <a class="mint-glow-text text-white p-4" onclick="openWallet()">Connect Wallet</a>
             </div>
           </ul>
-          <div class="underline whitepaper me-3" onclick="MenuOpenClose()">
+          <div class="whitepaper me-3" onclick="MenuOpenClose()">
             <button class="navbar-toggler" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -76,6 +77,31 @@
           <a class="nav-link text-white p-2" href="token.html" >Minting</a>
         </li>
       </ul>
+    </div>
+    <div class="modal fade" id="WalletModal" tabindex="-1" aria-labelledby="WalletModalLabel" aria-hidden="true">
+      <div class="bluredbackground" onclick="closeWallet()"></div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center flex-column">
+            <h4 class="modal-title text-center fw-bold" id="WalletModalLabel">Connect Wallet!</h4>
+          </div>
+          <div class="modal-body justify-content-between p-4">
+            <div class="p-2">
+              <a class="box discord text-white d-flex justify-content-center align-items-center flex-column" onclick="connect()">
+                <img src="img/metamask.png" alt="">
+                Metamask
+              </a>
+            </div>
+            <div class="p-2">
+              <a class="box discord text-white d-flex justify-content-center align-items-center flex-column">
+                <img src="img/WalletConnect.png" alt="">
+                WalletConnect
+              </a>
+            </div>
+            <p class="text-white text-center mt-2">Note: We DO NOT collect or sell your private information!</p>
+          </div>
+        </div>
+      </div>
     </div>
     <section id="home" class="home mint d-flex flex-column justify-content-center align-items-center pt-3">
       <div class="home-container container row p-5 mt-3">
@@ -316,7 +342,6 @@
            with in game assets, and staking it to participate in the administration of the decentralized autonomous organization (DAO).</p>
       </div>
     </section>
-
     <section id="faq" class="d-flex align-items-center flex-column">
       <div class="row container">
         <div class="col-lg-4 col-sm-12 d-flex align-items-end">

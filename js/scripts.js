@@ -96,13 +96,16 @@ window.onscroll = function (e) {
 };
 
 function openclose(obj) {
-  console.log(obj);
   i = obj.getElementsByClassName("fa-solid")[0];
+  let area = obj.getAttribute('aria-controls');
+  let textarea = document.getElementById(area).firstElementChild;
   if (i.classList.contains("fa-plus")) {
+    textarea.style = "border: 1px solid #9a00ac;";
     obj.style = "border-end-end-radius: 0px; border-end-start-radius: 0px";
     i.classList.remove("fa-plus");
     i.classList.add("fa-minus");
   } else {
+    textarea.style = "border: none;";
     obj.style = "border-end-end-radius: 20px; border-end-start-radius: 20px";
     i.classList.remove("fa-minus");
     i.classList.add("fa-plus");

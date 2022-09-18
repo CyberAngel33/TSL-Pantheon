@@ -27,27 +27,28 @@
         </a>
         <div class="d-flex justify-content-end ">
           <ul class="navbar-nav flex-row">
-            <li class="nav-item underline">
-              <a class="nav-link text-white p-4" href="index.html">NFTs</a>
+            <li class="nav-item drop-item">
+              <a class="nav-link text-white p-4">Main <i class="fa-solid fa-caret-down text-white"></i></a>
+              <ul class="nav-drop-item">
+                <li><a class="text-white p-3" href="index.html">NFTs</a></li>
+                <li><a class="text-white p-3" href="token.html">TSL Token</a></li>
+              </ul>
             </li>
-            <li class="nav-item underline">
-              <a class="nav-link text-white p-4" href="token.html">TSL Token</a>
-            </li>
-            <li class="nav-item underline">
+            <li class="nav-item">
               <a class="nav-link text-white p-4" href="tournaments.html">Tournaments</a>
             </li>
-            <li class="nav-item underline">
+            <li class="nav-item">
               <a class="nav-link text-white p-4" href="https://whitepaper.tslpantheon.com"
                 target="_blank">Whitepaper</a>
             </li>
-            <li class="nav-item underline">
+            <li class="nav-item active-nav-link">
               <a class="nav-link text-white p-4" href="mint.html">Minting</a>
             </li>
             <div class="mint-glow" id="connectWall">
               <a class="mint-glow-text text-white p-4" onclick="openWallet()">Connect Wallet</a>
             </div>
           </ul>
-          <div class="underline whitepaper me-3" onclick="MenuOpenClose()">
+          <div class="whitepaper me-3" onclick="MenuOpenClose()">
             <button class="navbar-toggler" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
