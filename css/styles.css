@@ -694,6 +694,12 @@ header {
 .mySwiper3 .swiper-button-next {
   color: #9a00ac;
 }
+.mySwiper2 .swiper-pagination{
+  bottom: -3px;
+}
+.mySwiper2 .swiper-pagination-bullet-active{
+  background-color: #9a00ac;
+}
 
 .textincard {
   height: auto;
@@ -1093,7 +1099,7 @@ footer p{
 .token-swiper .card {
   background-color: #9a00ac;
   border-radius: 10px;
-  filter: drop-shadow(8px 15px 11px #272727);
+  filter: drop-shadow(4px 5px 10px #272727);
   position: relative;
 }
 
@@ -1104,8 +1110,21 @@ footer p{
 .token-update .card {
   background-color: #9a00ac;
   border-radius: 10px;
-  filter: drop-shadow(8px 15px 11px #272727);
+  height: 365px;
+  /* filter: drop-shadow(8px 15px 11px #272727); */
   position: relative;
+}
+
+.token-update .active-card::after{
+  content: "Popular";
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  background-color: #2b192e;
+  color: white;
+  padding: 10px 20px;
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
 }
 
 .token-update .card-title,
@@ -1124,6 +1143,43 @@ footer p{
 .token-update .card-contanier {
   margin: 0 auto;
 }
+.token-update .fa-ethereum{
+  font-size: 16px;
+}
+.token-update .purchase-button{
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 20px;
+  border: 2px solid #5d0068;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  transition: 0.2s;
+}
+.token-update .purchase-button:hover{
+  background-color: #5d0068;
+  color:white;
+}
+
+.token-update ul{
+  list-style-type: none;
+  height: 160px;
+}
+
+.token-update ul li{
+  line-height: 200%;
+  color:white;
+  position: relative;
+  padding-left: 22px;
+}
+
+.token-update ul .fa-circle-check{
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
 
 .token-purchase-button-container {
   width: 100%;
@@ -1131,7 +1187,6 @@ footer p{
   outline: none;
   color: #ffffff;
   background: rgb(93, 0, 104);
-  height: 35px;
   width: max-content;
   border-radius: 20px;
   margin-top: 5px;
@@ -1159,7 +1214,7 @@ footer p{
   animation: glowing 20s linear infinite;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .token-purchase-button-container:after {
@@ -1171,7 +1226,7 @@ footer p{
   background: rgb(93, 0, 104);
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .token-purchase-button-container:hover:after {
@@ -1182,11 +1237,13 @@ footer p{
   opacity: 1;
 }
 
-.token-purchase-button-container a {
-  width: 200px;
-  line-height: 35px;
+.token-purchase-button-container button {
+  display: inline-block;
+  width: 100%;
   font-weight: bold;
-  font-size: 16px;
+  padding: 12px 20px;
+  background: none;
+  border: none;
 }
 
 .tokenomics {
@@ -1339,6 +1396,15 @@ table td:before {
   .blank-card {
     display: none;
   }
+  
+  .token-swiper {
+    display: block;
+  }
+  
+
+  .card-contanier {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1353,6 +1419,7 @@ table td:before {
   .responsive-nav {
     display: none;
   }
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -1364,15 +1431,9 @@ table td:before {
     display: none;
   }
 
-  .token-swiper {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .token-swiper {
-    display: block;
-  }
 
   .milestonz {
     display: none;
@@ -1408,10 +1469,6 @@ table td:before {
   .games a::after {
     font-size: 30px;
     transform: translate(-50%, -30px);
-  }
-
-  .card-contanier {
-    display: none;
   }
 
   .team-container {

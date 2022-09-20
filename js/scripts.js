@@ -45,25 +45,39 @@ var swiper2 = new Swiper(".mySwiper", {
   },
   loop: true,
 });
-
 var swiper3 = new Swiper(".mySwiper2", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: 2,
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1600: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
   },
-  speed: 1800,
+  freeMode: true,
+  loop: true,
+  speed: 2000,
   autoplay: {
-    delay: 1300,
+    delay: 1500,
     disableOnInteraction: false,
   },
-  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
 });
 
 var swiper4 = new Swiper(".mySwiper3", {
