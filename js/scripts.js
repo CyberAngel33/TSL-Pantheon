@@ -88,6 +88,12 @@ var swiper4 = new Swiper(".mySwiper3", {
   loop: true,
 });
 
+var swiper5 = new Swiper(".mySwiper4", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
 let circles = document.getElementsByClassName("milestonz")[0];
 let pagin = document.getElementsByClassName("mySwiper1")[0];
 window.onload = function () {
@@ -218,4 +224,22 @@ if(document.getElementById('myChart') != null){
   const myChart = new Chart(ctx, config);
   Chart.defaults.color = "rgb(255, 255, 255, 0.9)";
   Chart.defaults.font.family = "Akaya Telivigala";
+}
+
+swiper5.on('slideChange', function () {
+  currentId = swiper5.realIndex + 1;
+  let pantheonBoxes = document.getElementsByClassName("pantheon-box");
+  for(let i = 0; i < pantheonBoxes.length; i++){
+    pantheonBoxes[i].classList.remove("active-token-box");
+    if(pantheonBoxes[i].getAttribute("data-id") == currentId)
+      pantheonBoxes[i].classList.add("active-token-box");
+  }
+});
+
+function changeSlide(slideId, pantheonBox){
+  let pantheonBoxes = document.getElementsByClassName("pantheon-box");
+  swiper5.slideToLoop(slideId - 1, 1000, true);
+  for(let i = 0; i < pantheonBoxes.length; i++)
+    pantheonBoxes[i].classList.remove("active-token-box");
+  pantheonBox.classList.add("active-token-box");
 }

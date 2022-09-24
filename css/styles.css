@@ -1246,6 +1246,51 @@ footer p{
   border: none;
 }
 
+.mySwiper4{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid #45004d;
+  background-color: #45004dcb;
+}
+
+.mySwiper4 .swiper-pagination-bullet{
+  background-color: #9700a8aa;
+}
+
+.mySwiper4 p,h3{
+  color: white;
+  text-align: center;
+}
+
+.token-slider-box{
+  background-color: #9700a8aa;
+  border-radius: 20px;
+}
+.active-token-box{
+  background: linear-gradient(45deg, #9a00ac 25%,#00cbff 100%)!important;
+  /* background-color: #9a00ac!important; */
+}
+
+.pantheon-box{
+  background-color: #45004d;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, 0.8));
+  transition: 0.2s;
+}
+
+.pantheon-box:hover{
+  background-color: #9a00ac;
+  cursor: pointer;
+}
+
+.pantheon-box p{
+  color:white;
+}
+.token-title{
+  font-size: 60px;
+}
+
 .tokenomics {
   background-color: #2b192e;
 }
