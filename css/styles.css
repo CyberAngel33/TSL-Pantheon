@@ -1457,8 +1457,8 @@ table td:before {
 
 @media screen and (max-width: 992px) {
   .mySwiper4 svg{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .blank-card {
     display: none;
