@@ -1255,13 +1255,14 @@ footer p{
 }
 
 .mySwiper4 .swiper-pagination-bullet{
-  background-color: #9700a8aa;
+  background-color: #e600ffaa;
 }
 
 .mySwiper4 p,h3{
   color: white;
   text-align: center;
 }
+
 
 .token-slider-box{
   background-color: #9700a8aa;
@@ -1429,15 +1430,36 @@ table td:before {
   }
 }
 
-@media screen and (max-width: 992px) {
+
+@media screen and (min-width: 1400px) {
+  .mySwiper4 p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
   .navbar-nav {
     display: none;
   }
-
   .whitepaper {
     display: block;
   }
+}
 
+@media screen and (min-width: 1220px) {
+  .responsive-nav {
+    display: none;
+  }
+  .whitepaper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mySwiper4 svg{
+    width: 200px;
+    height: 200px;
+  }
   .blank-card {
     display: none;
   }
@@ -1446,25 +1468,23 @@ table td:before {
     display: block;
   }
   
-
   .card-contanier {
     display: none;
+  }
+
+  .token-text-box{
+    display: none;
+  }
+
+  .token-slider-box{
+    /* background-color: transparent; */
   }
 }
 
 @media screen and (min-width: 992px) {
-  .whitepaper {
-    display: none;
-  }
-
   .blank-card {
     display: block;
-  }
-
-  .responsive-nav {
-    display: none;
-  }
-  
+  }  
 }
 
 @media screen and (min-width: 768px) {
@@ -1541,6 +1561,10 @@ table td:before {
 
   .lol-sm {
     display: inline;
+  }
+
+  .mySwiper4{
+    /* width: 450px; */
   }
 }
 
