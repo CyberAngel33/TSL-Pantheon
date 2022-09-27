@@ -95,6 +95,17 @@
   font-family: "Akaya Telivigala", cursive;
 }
 
+#preloader{
+  background: white url('../img/loading.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
 h1 {
   font-size: 72px;
   font-weight: bold;

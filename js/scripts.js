@@ -1,3 +1,10 @@
+let loader = document.getElementById("preloader");
+
+window.addEventListener('load', function(){
+  loader.style.display = "none";
+})
+
+
 var swiper1 = new Swiper(".mySwiper1", {
   effect: "coverflow",
   grabCursor: true,
