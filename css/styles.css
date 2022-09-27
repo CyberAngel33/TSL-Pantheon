@@ -96,14 +96,33 @@
 }
 
 #preloader{
-  background: white url('../img/loading.gif');
-  background-repeat: no-repeat;
+  background: white;
+  /* background-repeat: no-repeat;
   background-position: center;
-  background-size: 10%;
+  background-size: 10%; */
   width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9a00ac;
+}
+
+#preloader video{
+  display: inline-block;
+}
+
+#preloader p{
+  color: white;
+  font-size: 24px;
+}
+
+#preloader span{
+  color: white;
+  /* font-size: 24px; */
 }
 
 h1 {
