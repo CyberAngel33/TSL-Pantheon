@@ -7,6 +7,9 @@ window.addEventListener('load', function(){
   setInterval(() => {
     threedot();
   }, 4000);
+  document.body.style.overflowY = 'scroll';
+});
+window.addEventListener('onload', function(){
 });
 
 let dot1 = document.getElementsByClassName("dot1")[0];

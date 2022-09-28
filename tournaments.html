@@ -18,6 +18,13 @@
 </head>
 
 <body>
+  <div id="preloader">
+    <video width="300px" height="300px" loop autoplay muted>
+      <source src="img/token.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+    <p>Loading <span class="dot1">.</span> <span class="dot2">.</span> <span class="dot3">.</span></p>
+  </div>
   <header>
     <nav class="navbar">
       <div class="container position-relative">
@@ -128,11 +135,12 @@
       </div>
     </section>
   </header>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
   <script src="https://kit.fontawesome.com/c42cee91f2.js" crossorigin="anonymous"></script>
   <script src="js/connectmeta.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="module" src="js/firebase.js"></script>
+  <!-- <script type="module" src="js/firebase.js"></script> -->
+  <script src="js/loading.js"></script>
   <script>
     MenuOpenClose();
     function MenuOpenClose() {
@@ -146,7 +154,6 @@
         if (window.scrollY < 80)
           document.getElementsByClassName("navbar")[0].style.background = "none";
       }
-      openState = !openState;
     }
     function darker(e) {
       let games = document.getElementsByClassName("games");
