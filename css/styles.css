@@ -97,9 +97,6 @@
 
 #preloader{
   background: white;
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10%; */
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -113,17 +110,53 @@
 
 #preloader video{
   display: inline-block;
+  width: 30vw;
+  height: 30vw;
 }
 
 #preloader p{
   color: white;
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-#preloader span{
-  color: white;
-  /* font-size: 24px; */
+.dot-typing {
+  position: relative;
+  left: -9985px;
+  top: 30px;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #fff;
+  box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  animation: dotTyping 1.5s infinite linear;
 }
+
+@keyframes dotTyping {
+  0% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  16.667% {
+    box-shadow: 9984px -10px 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  33.333% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  50% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px -10px 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  66.667% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+  83.333% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px -10px 0 0 #fff;
+  }
+  100% {
+    box-shadow: 9984px 0 0 0 #fff, 9999px 0 0 0 #fff, 10014px 0 0 0 #fff;
+  }
+}
+
 
 h1 {
   font-size: 72px;
