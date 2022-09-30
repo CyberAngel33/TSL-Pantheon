@@ -106,6 +106,7 @@
   align-items: center;
   flex-direction: column;
   background-color: #9a00ac;
+  transition: 0.3s;
 }
 
 #preloader video{
